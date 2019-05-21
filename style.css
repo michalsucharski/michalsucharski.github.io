@@ -241,8 +241,14 @@ footer p {
         visibility: hidden;
     }
         .con {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
+    
+    .con img {
+    margin-right: 8px;
+    width: 30px;
+    vertical-align: middle;
+}
 }
 
 /* Landscape */
@@ -262,7 +268,11 @@ footer p {
     }
 
     .con {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
-
+.con img {
+    margin-right: 8px;
+    width: 30px;
+    vertical-align: middle;
+}
 }
