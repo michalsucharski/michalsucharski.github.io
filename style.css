@@ -79,6 +79,11 @@ body {
     margin-top: 50px;
 }
 
+.about .abouttext {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .grid-3 {
     display: grid;
     grid-gap: 20px;
@@ -240,15 +245,22 @@ footer p {
     .profil {
         visibility: hidden;
     }
-        .con {
+
+    .con {
         font-size: 0.6rem;
     }
-    
+
     .con img {
-    margin-right: 8px;
-    width: 30px;
-    vertical-align: middle;
-}
+        margin-right: 8px;
+        width: 30px;
+        vertical-align: middle;
+    }
+    
+    .about .abouttext{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
 }
 
 /* Landscape */
@@ -270,9 +282,14 @@ footer p {
     .con {
         font-size: 0.6rem;
     }
-.con img {
-    margin-right: 8px;
-    width: 30px;
-    vertical-align: middle;
-}
+
+    .con img {
+        margin-right: 8px;
+        width: 30px;
+        vertical-align: middle;
+    }
+        .about .abouttext{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
