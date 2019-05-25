@@ -255,85 +255,77 @@ footer p {
     .content .logo {
         height: 140px;
         width: 140px;
-        -webkit-animation: rotation 2s infinite linear;
+        -webkit-animation: rotation 2s 2 ease;
     }
 
-    @-webkit-keyframes rotation {
-        from {
-            -webkit-transform: rotate(0deg);
-        }
 
-        to {
-            -webkit-transform: rotate(359deg);
-        }
-
-        .content .text {
-            display: none;
-        }
-
-        .grid-3,
-        .grid-2 {
-            grid-template-columns: 1fr;
-        }
-
-        .services div {
-            border-bottom: #333 dashed 1px;
-            padding: 1.2rem 1rem;
-        }
-
-        figure {
-            width: 100%;
-        }
-
-        .profil {
-            visibility: hidden;
-        }
-
-        .con {
-            font-size: 0.6rem;
-        }
-
-        .con img {
-            margin-right: 8px;
-            width: 30px;
-            vertical-align: middle;
-        }
-
-        .about .abouttext {
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-
+    .content .text {
+        display: none;
     }
 
-    /* Landscape */
-    @media (max-height: 500px) {
-
-        .content .title,
-        .content .text {
-            display: none;
-        }
-
-        .content {
-            top: 0;
-        }
-
-        figure {
-            width: 100%;
-        }
-
-        .con {
-            font-size: 0.6rem;
-        }
-
-        .con img {
-            margin-right: 8px;
-            width: 30px;
-            vertical-align: middle;
-        }
-
-        .about .abouttext {
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    .grid-3,
+    .grid-2 {
+        grid-template-columns: 1fr;
     }
+
+    .services div {
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .profil {
+        visibility: hidden;
+    }
+
+    .con {
+        font-size: 0.8rem;
+    }
+
+    .con img {
+        margin-right: 8px;
+        width: 30px;
+        vertical-align: middle;
+    }
+
+    .about .abouttext {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+
+    .content .title,
+    .content .text {
+        display: none;
+    }
+
+    .content {
+        top: 0;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .con {
+        font-size: 0.8rem;
+    }
+
+    .con img {
+        margin-right: 8px;
+        width: 30px;
+        vertical-align: middle;
+    }
+
+    .about .abouttext {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
