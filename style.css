@@ -16,8 +16,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
     transition: all 1000ms;
 }
 
@@ -27,8 +27,8 @@ body {
 }
 
 .showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 }
 
 .content {
@@ -47,6 +47,25 @@ body {
 .content .logo {
     height: 100px;
     width: 100px;
+    -webkit-animation: rotation 6s 2 ease;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(90deg);
+    }
+
+    60% {
+        -webkit-transform: rotate(90deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
 }
 
 .content .title {
@@ -131,6 +150,7 @@ body {
 .bg-light {
     background: #f4f4f4;
     color: #333;
+
 }
 
 .bg-dark {
@@ -142,11 +162,14 @@ body {
 
 
 .portfolio {
-    background: #0f0f0f;
+    background: #324075;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    -webkit-box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
 }
 
 .porfolio h1 {
@@ -163,10 +186,17 @@ body {
 }
 
 .subgallery .image {
-    flex: 31%;
+    flex: 26%;
     overflow: hidden;
     cursor: pointer;
-    padding: 5px;
+    margin: 10px;
+    padding: 0px;
+    -webkit-box-shadow: 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    border-width: 4px;
+    border-style: solid;
+    border-color: white;
 }
 
 
@@ -196,6 +226,9 @@ body {
 
 footer {
     padding: 2.2rem;
+    -webkit-box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 9px 17px 3px rgba(0, 0, 0, 0.75);
 }
 
 footer p {
@@ -222,74 +255,85 @@ footer p {
     .content .logo {
         height: 140px;
         width: 140px;
+        -webkit-animation: rotation 2s infinite linear;
     }
 
-    .content .text {
-        display: none;
+    @-webkit-keyframes rotation {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(359deg);
+        }
+
+        .content .text {
+            display: none;
+        }
+
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .services div {
+            border-bottom: #333 dashed 1px;
+            padding: 1.2rem 1rem;
+        }
+
+        figure {
+            width: 100%;
+        }
+
+        .profil {
+            visibility: hidden;
+        }
+
+        .con {
+            font-size: 0.6rem;
+        }
+
+        .con img {
+            margin-right: 8px;
+            width: 30px;
+            vertical-align: middle;
+        }
+
+        .about .abouttext {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
     }
 
-    .grid-3,
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
+    /* Landscape */
+    @media (max-height: 500px) {
 
-    .services div {
-        border-bottom: #333 dashed 1px;
-        padding: 1.2rem 1rem;
-    }
+        .content .title,
+        .content .text {
+            display: none;
+        }
 
-    figure {
-        width: 100%;
-    }
+        .content {
+            top: 0;
+        }
 
-    .profil {
-        visibility: hidden;
-    }
+        figure {
+            width: 100%;
+        }
 
-    .con {
-        font-size: 0.6rem;
-    }
+        .con {
+            font-size: 0.6rem;
+        }
 
-    .con img {
-        margin-right: 8px;
-        width: 30px;
-        vertical-align: middle;
-    }
-    
-    .about .abouttext{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    
-}
+        .con img {
+            margin-right: 8px;
+            width: 30px;
+            vertical-align: middle;
+        }
 
-/* Landscape */
-@media (max-height: 500px) {
-
-    .content .title,
-    .content .text {
-        display: none;
+        .about .abouttext {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
-
-    .content {
-        top: 0;
-    }
-
-    figure {
-        width: 100%;
-    }
-
-    .con {
-        font-size: 0.6rem;
-    }
-
-    .con img {
-        margin-right: 8px;
-        width: 30px;
-        vertical-align: middle;
-    }
-        .about .abouttext{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-}
