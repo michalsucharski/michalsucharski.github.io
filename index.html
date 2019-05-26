@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="style-gallery.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="imagehover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- animateonscroll-->
 </head>
 
 <body>
+
+    
     <header class="showcase">
         <div class="content">
-            <img src="logo1.png" class="logo" alt="Traversy Media">
+            <img src="logo1.png" class="logo" alt="">
             <div class="title">
                 SUCHARSKI MEDIA
             </div>
@@ -33,20 +36,20 @@
 
     <!-- About -->
     <section class="about bg-light">
-        <h1>O MNIE</h1>
+        <h1 data-aos="fade-in">O MNIE</h1>
         <hr width="80%">
         <div class="container1">
 
 
-              <div class="grid-2">
-        <div class="center">
-          <i class="fas fa-user-astronaut fa-10x"></i>
-        </div>
-        <div class="abouttext">
-          <h3>Cześć!</h3>
-          <p>Jestem Michał i hobbystycznie zajmuję się projektowaniem różnorodnych grafik komputerowych. Ponadto rozwijam umiejętności związane z programowaniem responsywnych stron internetowych. Znam aktualne trendy projektowe związane z marketingiem internetowym oraz WebDesign. <br><br>Jeśli jesteś zainteresowany/a współpracą, daj znać!<br><br><br><br><br><br></p>
-        </div>
-      </div>
+            <div class="grid-2" >
+                <div class="center" data-aos="fade-right">
+                    <i class="fas fa-user-astronaut fa-10x"></i>
+                </div>
+                <div class="abouttext" data-aos="fade-left">
+                    <h3>Cześć!</h3>
+                    <p>Jestem Michał i hobbystycznie zajmuję się projektowaniem różnorodnych grafik komputerowych. Ponadto rozwijam umiejętności związane z programowaniem responsywnych stron internetowych. Znam aktualne trendy projektowe związane z marketingiem internetowym oraz WebDesign. <br><br>Jeśli jesteś zainteresowany/a współpracą, daj znać!<br><br><br><br><br><br></p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -54,7 +57,7 @@
     <div class="gallery">
         <div class="portfolio">
             <br><br>
-            <h1>PORTFOLIO</h1>
+            <h1  data-aos="fade-in">PORTFOLIO</h1>
             <br>
             <hr width="80%"><br><br>
 
@@ -94,7 +97,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                
+
                 <a href="img/10.jpg" class="image">
                     <figure class="imghvr-push-left" style="background-color: #0f0f0f;"><img src="img/11.jpg" alt="example-image">
                         <figcaption>
@@ -103,7 +106,7 @@
                         </figcaption>
                     </figure>
                 </a>
-                
+
                 <a href="img/4.png" class="image">
                     <figure class="imghvr-push-left" style="background-color: #0f0f0f;"><img src="img/4.jpg" alt="example-image">
                         <figcaption>
@@ -112,7 +115,7 @@
                         </figcaption>
                     </figure>
                 </a>
-<!--
+                <!--
                 <a href="img/1.png" class="image">
                     <figure class="imghvr-push-left" style="background-color: #0f0f0f;"><img src="img/1.jpg" alt="example-image">
                         <figcaption>
@@ -130,11 +133,11 @@
     </div>
     <div class="bg-light">
         <div class="contact">
-            <h1>KONTAKT</h1>
+            <h1 data-aos="fade-in">KONTAKT</h1>
             <hr width="80%">
             <br><br>
             <div class="con">
-                                               <img src="ph.png">605-928-769<br>
+                <img src="ph.png">605-928-769<br>
                 <a href="mailto: michalsucharski2@gmail.com"> <img src="gm.png">michalsucharski2@gmail.com</a><br>
                 <a href="http://www.linkedin.com/in/michalsucharski"> <img src="in.png">www.linkedin.com/in/michalsucharski</a><br>
                 <a href="http://www.facebook.com/michalsucharski"> <img src="fb.png">facebook.com/michalsucharski</a><br>
@@ -159,6 +162,14 @@
             }
         });
     </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>    
+
 
 
 </body></html>
